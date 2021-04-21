@@ -40,4 +40,108 @@
         <tag>教程</tag>
       </tags>
   </entry>
+  <entry>
+    <title>github+hexo 搭建个人博客平台教程</title>
+    <url>/2021/04/21/github+hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>​    当产生了一个问题，如何描述清楚这个问题，又如何解决这个问题。问题解决后总结并做好记录。时间长了记得不清楚是可以作为资料参考，帮助更快的解决问题。为了方便查询想到建立一个自己的博客平台。GitHub+hexo的成本更低入手更快，所以选择这种方式搭建自己的博格平台工自己记录工作生活中的笔记。</p>
+<p>参考链接：<a href="https://zhuanlan.zhihu.com/p/69207995">使用Github Pages和Hexo搭建自己的独立博客【超级详细的小白教程】</a></p>
+<h1 id="1、平台搭建前本地运行环境准备"><a href="#1、平台搭建前本地运行环境准备" class="headerlink" title="1、平台搭建前本地运行环境准备"></a>1、平台搭建前本地运行环境准备</h1><h2 id="1-1-安装node-js"><a href="#1-1-安装node-js" class="headerlink" title="1.1 安装node.js"></a>1.1 安装node.js</h2><p><a href="https://link.zhihu.com/?target=https://nodejs.org/en/download/">点击此处</a>访问官网，按需下载相应版本，默认安装可以了</p>
+<p><img src="https://pic1.zhimg.com/80/v2-a862cd19f00d37830a1d74e351cb9370_720w.jpg" alt="img"></p>
+<p>注：本人在安装过程中出现了Warning 1909,无法创建快捷方式，这种情况很少出现，如果在安装过程中也有这种情况请参考百度文库（win10系统实测可行）：<a href="https://link.zhihu.com/?target=https://wenku.baidu.com/view/4ad59110964bcf84b9d57ba5.html">《Win7安装程序警告1909无法创建快捷方式》</a></p>
+<p><img src="https://pic1.zhimg.com/80/v2-a2fe843c066b1932294085fdfbae7004_720w.jpg" alt="img"></p>
+<h2 id="1-2-安装git客户端"><a href="#1-2-安装git客户端" class="headerlink" title="1.2 安装git客户端"></a>1.2 安装git客户端</h2><p><a href="https://link.zhihu.com/?target=https://git-scm.com/download/win">点击此处</a>访问官网，按需下载相应版本，默认安装即可</p>
+<p>参考资料：</p>
+<p><a href="https://link.zhihu.com/?target=https://www.cnblogs.com/jytx/p/5602927.html">《如何在windows下安装GIT》</a> （By 俊雨廷休）</p>
+<p><a href="https://link.zhihu.com/?target=http://git.oschina.net/progit/">《Pro Git（中文版）》</a></p>
+<h2 id="1-3-安装Typora-markdown-文件编辑工具"><a href="#1-3-安装Typora-markdown-文件编辑工具" class="headerlink" title="1.3 安装Typora(markdown 文件编辑工具)"></a>1.3 安装Typora(markdown 文件编辑工具)</h2><h1 id="2、本地环境安装Hexo"><a href="#2、本地环境安装Hexo" class="headerlink" title="2、本地环境安装Hexo"></a>2、本地环境安装Hexo</h1><h2 id="2-1-安装hexo客户端"><a href="#2-1-安装hexo客户端" class="headerlink" title="2.1 安装hexo客户端"></a>2.1 安装hexo客户端</h2><p>选择一个磁盘，新建一个文件夹，自己重命名文件夹（如：我的文件夹为：Ｅ\myself_hexo），博客相关文件将储存在此文件夹下，在该文件夹下右键鼠标，点击 Git Bash Here，输入以下 npm 命令即可安装，第一个命令表示安装 hexo，第二个命令表示安装 hexo 部署到 git page 的 deployer，如图所示即为安装成功</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic1.zhimg.com/80/v2-747859cef004e42b6e03cb7f7bbba53c_720w.jpg" alt="img"></p>
+<hr>
+<h2 id="2-2-Hexo-初始化配置"><a href="#2-2-Hexo-初始化配置" class="headerlink" title="2.2 Hexo 初始化配置"></a>2.2 Hexo 初始化配置</h2><p>在刚才新建的文件夹里面再次新建一个 Hexo 文件夹（如：我的文件夹为：E\TRHX_Blog\Hexo）,进入该 Hexo 文件夹右键鼠标，点击 Git Bash Here，输入以下命令，如图所示则安装成功</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic3.zhimg.com/80/v2-02046eb4eecb5314b1883a9cadf71f4e_720w.jpg" alt="img"></p>
+<p>Hexo 安装完成后，将会在指定文件夹中新建所需要的文件，Hexo 文件夹下的目录如下：</p>
+<p>![image-20210420145531595](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420145531595.png)</p>
+<hr>
+<h2 id="2-3-本地查看效果"><a href="#2-3-本地查看效果" class="headerlink" title="2.3 本地查看效果"></a>2.3 本地查看效果</h2><p>执行以下命令，执行完即可登录 <a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a> 查看效果</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>显示以下信息说明操作成功：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+
+<p>登录 <a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a> 查看效果：</p>
+<p><img src="https://pic1.zhimg.com/80/v2-8b63b2eac2db49fc1f001f475aa316d8_720w.jpg" alt="img"></p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="3、在GitHub上创建Github-Pages"><a href="#3、在GitHub上创建Github-Pages" class="headerlink" title="3、在GitHub上创建Github Pages"></a>3、在GitHub上创建Github Pages</h1><p>到目前为止，我们的本地博客就成功搭建了，但是现在我们只能通过本地连接查看博客，我们要做的是让其他人也能够访问我们的博客，这就需要我们将博客部署到Github Pages上.</p>
+<ol>
+<li><p>创建项目代码库：点击 New repository 开始创建，步骤及注意事项见图：</p>
+<p>![image-20210420160918910](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420160918910.png)</p>
+<p>2.设置该新建repository的pages,可以指定对应的自定义域名</p>
+<hr>
+</li>
+</ol>
+<h1 id="4、将本地中的Hexo提交到Github-Pages"><a href="#4、将本地中的Hexo提交到Github-Pages" class="headerlink" title="4、将本地中的Hexo提交到Github Pages"></a>4、将本地中的Hexo提交到Github Pages</h1><p>1设置github的Personal access tokens，生成的token为提交时的github密码</p>
+<p>![image-20210420163844692](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420163844692.png)</p>
+<p>![image-20210420163917345](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420163917345.png)</p>
+<p>![image-20210420163957927](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420163957927.png)</p>
+<p>![image-20210420164049201](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420164049201.png)</p>
+<p>2修改hexo的_confiing.xml文案，指定对应的git地址（使用http方式提交git）</p>
+<p>![image-20210420163336880](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420163336880.png)</p>
+<p><img src="https://pic2.zhimg.com/80/v2-a639d48aa332f29e47f6a83c97c185d1_720w.jpg" alt="img"></p>
+<p>repository中的值可以为http地址，如</p>
+<p>：3、在hexo目录下执行提交命令</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>或者直接执行</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p>执行完之后会让你输入你的 Github 的账号和密码，如果此时报以下错误，说明你的 deployer 没有安装成功</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">ERROR Deployer not found: git</span><br></pre></td></tr></table></figure>
+
+<p>需要执行以下命令再安装一次：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>再执行 <code>hexo g -d</code>，你的博客就会部署到 Github 上了</p>
+<p><strong>执行hexo d 命令是会让输入github的用户和密码，注意该密码不是登录密码而是GitHub中生成的Personal access tokens。</strong></p>
+<p>七、访问博客</p>
+<p>你的博客地址：https://你的用户名.<a href="https://link.zhihu.com/?target=http://github.io">http://github.io</a>，比如我的是：<a href="https://link.zhihu.com/?target=https://trhx.github.io">https://trhx.github.io</a> ，现在每个人都可以通过此链接访问你的博客了</p>
+<h1 id="5、为博客更改Hexo主题"><a href="#5、为博客更改Hexo主题" class="headerlink" title="5、为博客更改Hexo主题"></a>5、为博客更改Hexo主题</h1><p>博客也搭建好了，文章也会写了，但是！！！默认的主题并不喜欢怎么办？现在，我们就来为自己的博客更换自己喜欢的主题</p>
+<p><a href="https://link.zhihu.com/?target=https://hexo.io/themes/">点击此处</a>进入 Hexo 官网的主题专栏，我们可以看见有许多的主题供我们选择</p>
+<p><img src="https://pic2.zhimg.com/80/v2-4f715f2848a2009f755e4e117d1def99_720w.jpg" alt="img"></p>
+<p>我们要做的就是把主题克隆过来，在此我们以主题 Aero-Dual 为例，点进去我们就可以看见该主题作者的博客，鼠标滑到底，我们可以看见 Theme By Levblanc 的字样（其他主题类似），点击作者 Levblanc ，页面就会跳转到该主题所有的相关文件在 Github 上的地址，复制该地址</p>
+<p><img src="https://pic2.zhimg.com/80/v2-c622e4fbdcd13547f8f7b661523b2889_720w.jpg" alt="img"></p>
+<p><img src="https://pic1.zhimg.com/80/v2-ec69bdba65eb661d34ed3299e672d6ec_720w.jpg" alt="img"></p>
+<p><img src="https://pic2.zhimg.com/80/v2-f095c3d8c767d5f60daf3edff407a481_720w.jpg" alt="img"></p>
+<p>再打开 Hexo 文件夹下的 themes 目录（如：E:\TRHX_Blog\Hexo\themes），右键 Git Bash Here，输入以下命令：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ git clone 此处填写你刚才复制的主题地址</span><br></pre></td></tr></table></figure>
+
+<p>比如要安装 Aero-Dual 主题，则输入命令：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ git clone https://github.com/levblanc/hexo-theme-aero-dual</span><br></pre></td></tr></table></figure>
+
+<p>等待下载完成后即可在 themes 目录下生成 hexo-theme-aero-dual 文件夹，然后打开 Hexo 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：theme：hexo-theme-aero-dual （其他主题修改成相应名称即可），再次注意冒号后面有一个空格！</p>
+<p><img src="https://pic2.zhimg.com/80/v2-3500f734e8ec85ef4c2dad77d1b93225_720w.jpg" alt="img"></p>
+<p>返回 Hexo 目录，右键 Git Bash Here ，输入以下命令开始部署主题：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo g   </span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+<p>此时打开浏览器，访问 <a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a> 就可看见我们的主题已经更换了，如果感觉效果满意，我们就可以把它部署到Github上了</p>
+<p>打开 Hexo 文件夹，右键 Git Bash Here ，输入以下命令：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo clean  </span><br><span class="line">//该命令的作用是清除缓存，若不输入此命令，服务器有可能更新不了主题</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p>此时访问自己的博客即可看见更换后的主题，但我们仍然需要对主题的相关配置进行修改，比如网站标题，图标等等，Hexo 中有两份主要的配置文件，名称都是 _config.yml ，它们均是用于站点配置使用的。其中，一份位于站点根目录下（比如我的：E:\TRHX_Blog\Hexo_config.yml），主要包含 Hexo 本身整站的配置；另一份位于主题目录下（比如我的：E:\TRHX_Blog\Hexo\themes\hexo-theme-aero-dual_config.yml），这份配置由主题作者提供，主要用于配置主题相关的选项，一般 _config.yml 文件里都有相关注释，按需修改即可</p>
+<p>参考资料：</p>
+<p><a href="https://www.zhihu.com/question/24422335">《有哪些好看的 Hexo 主题？》</a> （知乎）</p>
+<p><a href="https://link.zhihu.com/?target=https://hexo.io/zh-cn/docs/configuration.html">《Hexo | 配置》</a> （Hexo官方文档）</p>
+<p><a href="https://link.zhihu.com/?target=https://segmentfault.com/a/1190000002632530">《hexo常用命令笔记》</a> （By 小弟调调）</p>
+<h1 id="6、如何在博客上编辑发表文章"><a href="#6、如何在博客上编辑发表文章" class="headerlink" title="6、如何在博客上编辑发表文章"></a>6、如何在博客上编辑发表文章</h1><h1 id="7、如何修改配置nextX主题"><a href="#7、如何修改配置nextX主题" class="headerlink" title="7、如何修改配置nextX主题"></a>7、如何修改配置nextX主题</h1>]]></content>
+      <categories>
+        <category>日常工具</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>博客平台</tag>
+        <tag>GitHub</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
 </search>
