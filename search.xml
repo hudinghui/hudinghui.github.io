@@ -1,32 +1,359 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/04/19/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title></title>
+    <url>/2021/05/02/blogManger/README/</url>
+    <content><![CDATA[<h1 id="blogManger"><a href="#blogManger" class="headerlink" title="blogManger"></a>blogManger</h1><p>博客笔记文章存放地址</p>
 ]]></content>
   </entry>
   <entry>
+    <title>GitHub+typora+picGo对markdown文档编辑管理</title>
+    <url>/2021/04/21/blogManger/docs/GitHub+typora+picGo%E5%AF%B9markdown%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><h1 id="图床工具及设置上传到GitHub"><a href="#图床工具及设置上传到GitHub" class="headerlink" title="图床工具及设置上传到GitHub"></a>图床工具及设置上传到GitHub</h1><p>1、安装图床工具picGo</p>
+<p>​    <a href="https://github.com/Molunerfinn/PicGo/releases">PicGo 下载链接</a> 根据系统下载对应的安装包进行安装</p>
+<p>2、设置picGo默认图床为GitHub</p>
+<p>​    2.1上传区可以选择对应的图床</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430161544.png" alt="image-20210430161544696"></p>
+<p>2.2 状态栏右键选择默认图床</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430161827.png" alt="image-20210430161802451"></p>
+<p>3、设置GitHub图床设置</p>
+<p>​    3.1 保证图片上传文件名称不冲突，先设置上传前重命名和时间戳重命名打开</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430162040.png" alt="image-20210430162039910"></p>
+<p>​    3.2 选中GitHub为图床后设置GitHub的图床配置</p>
+<p>​    <strong>自定义域名</strong>使用：<a href="https://cdn.jsdelivr.net/gh/GitHub%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93%E5%90%8D%E7%A7%B0%EF%BC%8C%E9%80%9A%E8%BF%87cdn%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E5%9C%A8GitHub%E8%AE%BF%E9%97%AE%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98%E3%80%82">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名称，通过cdn解决图片在GitHub访问慢的问题。</a></p>
+<p>​    <strong>设定Token</strong>：该token在GitHub中设置，在GitHub用户设置中 setting》developer setting》personal access token 新建token，将生成的token设定到配置中。<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430164558.png" alt="image-20210430164558354"></p>
+<p> 图床设置-GitHub设置如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430162541.png" alt="image-20210430162541104"></p>
+<p>4、测试图片是否成功上传</p>
+<p>在面板的上传去拖动测试图片上传，在GitHub中查看验证文件是否上传成功。</p>
+<h1 id="md编辑工具typora设置自动上传图片到图床"><a href="#md编辑工具typora设置自动上传图片到图床" class="headerlink" title="md编辑工具typora设置自动上传图片到图床"></a>md编辑工具typora设置自动上传图片到图床</h1><p>1、安装typora</p>
+<p>​    官网下载安装<a href="https://www.typora.io/">https://www.typora.io/</a></p>
+<p>2、设置图片自动通过图床工具上传</p>
+<p>![image-20210430165143394](/Users/xmly/Library/Application Support/typora-user-images/image-20210430165143394.png)</p>
+<p>3、上传本地所有图片到图床</p>
+<p>​    原来写好的md文档中的图片存放在本地，将所有的本地图片上传到图床如下设置</p>
+<p>3.1、<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430165417.png" alt="image-20210430165417708"></p>
+<p>3.2 <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430165509.png" alt="image-20210430165508926"></p>
+]]></content>
+      <categories>
+        <category>日常工具</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>图床</tag>
+        <tag>picGo</tag>
+        <tag>typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue学习笔记</title>
+    <url>/2021/04/21/blogManger/docs/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="1、开发环境安装"><a href="#1、开发环境安装" class="headerlink" title="1、开发环境安装"></a>1、开发环境安装</h3><p>​    <strong>注意：cmd指令要以管理员权限运行</strong> <a href="https://www.cnblogs.com/zhaomeizi/p/8483597.html">https://www.cnblogs.com/zhaomeizi/p/8483597.html</a> </p>
+<ul>
+<li>1、下载安装node.js </li>
+<li>2、设置缓存文件夹 <code>npm config set cache &quot;D:\vueProject\nodejs\node_cache&quot;</code> 设置全局模块存放路径 <code>npm config set prefix &quot;D:\vueProject\nodejs\node_global&quot;</code> 设置成功后，之后用命令npm install XXX -g安装以后模块就在D:\vueProject\nodejs\node_global里 </li>
+<li>3、基于 Node.js 安装cnpm（淘宝镜像） npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></li>
+<li>4、设置环境变量（非常重要）</li>
+<li> 5、安装Vue(注: 重启下CMD窗口) <code>cnpm install vue -g</code> </li>
+<li>6、安装vue命令行工具，即vue-cli 脚手架 <code>cnpm install vue-cli -g</code> </li>
+<li><strong>目目录结构</strong>：![img](E:\01 面试复习资料汇总\02笔记\vue学习笔记.assets\74a7e5fa.png) <img src="file:///E:/Git%20local%20repository/icabinet/.%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF_images/d6156c38.png" alt="img"></li>
+</ul>
+<p>​    </p>
+<h3 id="2、idea中webpack方式创建vue项目"><a href="#2、idea中webpack方式创建vue项目" class="headerlink" title="2、idea中webpack方式创建vue项目"></a>2、idea中webpack方式创建vue项目</h3><p><a href="https://www.jianshu.com/p/9c1d4f8ed068">参考链接</a></p>
+<ol>
+<li><p>idea新建new project–==》选择vue.js,创建一个文件目录</p>
+</li>
+<li><p>选择Terminal窗口，在该窗口中使用指令创建项目目录</p>
+</li>
+<li><p>```shell<br>vue -V </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   测试是否安装成功</span><br><span class="line"></span><br><span class="line">4. &#96;&#96;&#96;shell</span><br><span class="line">   vue init webpack name</span><br></pre></td></tr></table></figure>
+
+<p>以webpack的方式创建vue项目结构,按照提示选择对应的选项</p>
+<p>5.cd命令进入项目目录</p>
+<p>6.pm run dev  本地启动项目   npm run build  生产打包，生成在dlist文件夹</p>
+<p>7.不同环境打包方式配置对应的配置文件</p>
+</li>
+</ol>
+<p>​        参考链接：<a href="https://my.oschina.net/lixiaoyan/blog/1511288">https://my.oschina.net/lixiaoyan/blog/1511288</a></p>
+<p>​        在//config目录下对应环境的配置文件中设置配置参数，调用过程使用 <strong>process.env.参数key</strong>  即可.</p>
+<p>​        注意：参数设置的值要以‘ “ 数据” ’的形式</p>
+<p>![image-20210202155143002](E:\01 面试复习资料汇总\02笔记\vue学习笔记.assets\image-20210202155143002.png)</p>
+<h3 id="3、微信公众号开发环境"><a href="#3、微信公众号开发环境" class="headerlink" title="3、微信公众号开发环境"></a>3、微信公众号开发环境</h3><p>1、微信开发平台申请微信公众号，</p>
+<p>2、下载安装开发者工具，用微信公众号的管理账号登录，</p>
+<p>3、使用内网穿透工具将本地服务可以连接外网，便于微信公众号测试</p>
+<p>4,、通过微信提供接口设置自定义菜单</p>
+<p>=======</p>
+<h3 id="1、开发环境安装-1"><a href="#1、开发环境安装-1" class="headerlink" title="1、开发环境安装"></a>1、开发环境安装</h3><p>​    <strong>注意：cmd指令要以管理员权限运行</strong> <a href="https://www.cnblogs.com/zhaomeizi/p/8483597.html">https://www.cnblogs.com/zhaomeizi/p/8483597.html</a> </p>
+<ul>
+<li><p>1、下载安装node.js </p>
+</li>
+<li><p>2、设置缓存文件夹 <code>npm config set cache &quot;D:\vueProject\nodejs\node_cache&quot;</code> 设置全局模块存放路径 <code>npm config set prefix &quot;D:\vueProject\nodejs\node_global&quot;</code> 设置成功后，之后用命令npm install XXX -g安装以后模块就在D:\vueProject\nodejs\node_global里 </p>
+</li>
+<li><p>3、基于 Node.js 安装cnpm（淘宝镜像） npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+</li>
+<li><p>4、设置环境变量（非常重要）</p>
+</li>
+<li><p>5、安装Vue(注: 重启下CMD窗口) <code>cnpm install vue -g</code> </p>
+</li>
+<li><p>6、安装vue命令行工具，即vue-cli 脚手架 <code>cnpm install vue-cli -g</code> </p>
+</li>
+<li><p><strong>目目录结构</strong>：<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502194951.png" alt="img"><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502195641.png" alt="image-20210502195547646"></p>
+</li>
+</ul>
+<p>​    </p>
+<h3 id="2、idea中webpack方式创建vue项目-1"><a href="#2、idea中webpack方式创建vue项目-1" class="headerlink" title="2、idea中webpack方式创建vue项目"></a>2、idea中webpack方式创建vue项目</h3><p><a href="https://www.jianshu.com/p/9c1d4f8ed068">参考链接</a></p>
+<ol>
+<li><p>idea新建new project–==》选择vue.js,创建一个文件目录</p>
+</li>
+<li><p>选择Terminal窗口，在该窗口中使用指令创建项目目录</p>
+</li>
+<li><p>```shell<br>vue -V </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   测试是否安装成功</span><br><span class="line"></span><br><span class="line">4. &#96;&#96;&#96;shell</span><br><span class="line">   vue init webpack name</span><br></pre></td></tr></table></figure>
+
+<p>以webpack的方式创建vue项目结构,按照提示选择对应的选项</p>
+<p>5.cd命令进入项目目录</p>
+<p>6.pm run dev  本地启动项目   npm run build  生产打包，生成在dlist文件夹</p>
+<p>7.不同环境打包方式配置对应的配置文件</p>
+</li>
+</ol>
+<p>​        参考链接：<a href="https://my.oschina.net/lixiaoyan/blog/1511288">https://my.oschina.net/lixiaoyan/blog/1511288</a></p>
+<p>​        在//config目录下对应环境的配置文件中设置配置参数，调用过程使用 <strong>process.env.参数key</strong>  即可.</p>
+<p>​        注意：参数设置的值要以‘ “ 数据” ’的形式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502195739.png" alt="image-20210202155143002"></p>
+<h3 id="3、微信公众号开发环境-1"><a href="#3、微信公众号开发环境-1" class="headerlink" title="3、微信公众号开发环境"></a>3、微信公众号开发环境</h3><p>1、微信开发平台申请微信公众号，</p>
+<p>2、下载安装开发者工具，用微信公众号的管理账号登录，</p>
+<p>3、使用内网穿透工具将本地服务可以连接外网，便于微信公众号测试</p>
+<p>4,、通过微信提供接口设置自定义菜单</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ea9615b267b9e39937a9defd7ba9fc0b71c7650e</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>安装教程</tag>
+        <tag>前端</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/05/02/blogManger/docs/%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<h2 id="rabbitMQ"><a href="#rabbitMQ" class="headerlink" title="rabbitMQ"></a>rabbitMQ</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="服务代理集成"><a href="#服务代理集成" class="headerlink" title="服务代理集成"></a>服务代理集成</h2><p>服务整合 ： 服务模型 模型加载 组合服务模型解析 组合务执行<br>服务编排： 服务编排 与 服务编制   ``````````````````````````````````````````````````````````````````````````````````````. </p>
+<p>代码  服务集成中的限流熔断之类的基础服务通过 责任链模式进行配置设置，通过执行对应的handler进行处理</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/05/04/blogManger/docs/%E5%BB%BA%E8%A1%8C%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h2 id="要学习的知识点"><a href="#要学习的知识点" class="headerlink" title="要学习的知识点"></a>要学习的知识点</h2><p>springboot启动机制<br>spring的profile机制<br>适配器模式 、责任链模式、 适配器模式<br>lua脚本、shell脚本</p>
+<h2 id="账号信息"><a href="#账号信息" class="headerlink" title="账号信息"></a>账号信息</h2><ol>
+<li>建行ID登录：82761380 Hudinghui@163</li>
+<li>notes密码：11111111</li>
+<li></li>
+</ol>
+<h2 id="资料文档目录地址"><a href="#资料文档目录地址" class="headerlink" title="资料文档目录地址"></a>资料文档目录地址</h2><ol>
+<li>服务整合编排编码目录： dcp-integ-core</li>
+<li>共享资料地址： \128.194.1.13\it架构共享\kingsoft</li>
+</ol>
+<h2 id="建行工具使用"><a href="#建行工具使用" class="headerlink" title="建行工具使用"></a>建行工具使用</h2><p>​    1.doremi测试平台</p>
+<p>​            帮助文档路径： 搜索uk</p>
+<p>​            案例分类：1单节点案例 2流程案例 3冲正案例（实际也是流程案例）<br>​            看输入输出 表结构中文<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210503090145.png"><br>​            抽数 断言设置（通过表达式设置）</p>
+<h2 id="名称术语解释"><a href="#名称术语解释" class="headerlink" title="名称术语解释"></a>名称术语解释</h2><p><strong>项目相关术语列表</strong></p>
+<pre><code>冲正：针对正交易进行的方向处理的请求动作
+接入：指上层系统请求本系统的请求信息
+接出：指针对接入请求进行请求分发至下游其他系统的请求信息。与接入是一对多关系，接入又分为内呼、外呼两类
+内呼：请求发往微服务系统的请求信息
+外呼：请求发往P6系统的请求信息
+</code></pre>
+<h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><h3 id="项目结构简称含义："><a href="#项目结构简称含义：" class="headerlink" title="项目结构简称含义："></a><strong>项目结构简称含义</strong>：</h3><pre><code>dkbs：
+dcp：基础平台
+integ: 集成 综合 组合
+aggregator:统一集成
+plat:静态配置
+config:动态配置
+hft:高频处理
+fsb:文件处理单元
+pkb:业务处理单元
+isb:作业介入&amp;调度
+context:配置文件
+reverse:冲正  
+journal：流水
+innerBound:内呼
+outBound:外呼
+inBound:接入
+integBound:组合外呼
+check:巡检 检查
+</code></pre>
+<p>文件转跳</p>
+<h3 id="项目结构模块："><a href="#项目结构模块：" class="headerlink" title="项目结构模块："></a><strong>项目结构模块：</strong></h3><p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210503090203.png"><br><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210503090220.png"></p>
+<pre><code>dcp-core:基础工具 （锁/MQ/缓存/队列）
+dcp-hft:高频处理框架
+dcp-batch:批处理架构(下档、作业调度、文件代理)
+dcp-big-data-process:大数据平台对接框架
+</code></pre>
+<h3 id="分布式批处理架构模块-TODO"><a href="#分布式批处理架构模块-TODO" class="headerlink" title="分布式批处理架构模块 TODO"></a><strong>分布式批处理架构模块</strong> TODO</h3><h3 id="服务集成项目模块"><a href="#服务集成项目模块" class="headerlink" title="服务集成项目模块"></a><strong>服务集成项目模块</strong></h3><h4 id="1-核心类介绍"><a href="#1-核心类介绍" class="headerlink" title="1. 核心类介绍"></a>1. 核心类介绍</h4><p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210503090236.png"></p>
+<h4 id="2-核心功能模块"><a href="#2-核心功能模块" class="headerlink" title="2. 核心功能模块"></a>2. 核心功能模块</h4><ul>
+<li><h4 id="模型整合管理"><a href="#模型整合管理" class="headerlink" title="模型整合管理"></a>模型整合管理</h4><ul>
+<li><p>定义</p>
+<ul>
+<li>负责对服务组合模型进行<em><strong>装载解析、执行</strong></em> 的功能</li>
+</ul>
+</li>
+<li><p>使用场景</p>
+</li>
+<li><p>应用路由层发起一个组合交易请求，跟前请求的类型找到相应定义的服务组合的配置信息文件，1）读取整合模型文件，2）将请求参数按照模型进行解析，3）执行解析后的信息</p>
+</li>
+</ul>
+</li>
+<li><p>核心类图</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210503090254.png"><br><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210503090313.png">  </p>
+<ul>
+<li><p>模块主要功能</p>
+<ul>
+<li><p>模型装载解析</p>
+<p>实现思路：</p>
+</li>
+<li><p>模型的执行</p>
+<p>实现思路：</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="框架平台"><a href="#框架平台" class="headerlink" title="框架平台"></a>框架平台</h5><p>  分库分表</p>
+</li>
+<li><h5 id="流水管理"><a href="#流水管理" class="headerlink" title="流水管理"></a>流水管理</h5></li>
+<li><h5 id="分布式事务"><a href="#分布式事务" class="headerlink" title="分布式事务"></a>分布式事务</h5><ul>
+<li>模块主要功能<ul>
+<li>外部冲正</li>
+<li>内部冲正</li>
+<li>异步冲正</li>
+<li>事后一致性处理(对账)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="本地开发环境成功运行步骤-TODO"><a href="#本地开发环境成功运行步骤-TODO" class="headerlink" title="本地开发环境成功运行步骤 TODO"></a>本地开发环境成功运行步骤 TODO</h2><p>作业模板xml文件地址<br><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200804085009460.png" alt="image-20200804085009460"></p>
+<h2 id="电脑问题解决"><a href="#电脑问题解决" class="headerlink" title="电脑问题解决"></a>电脑问题解决</h2><h3 id="后台服务主机：网络服务-一直后台使用网络解决"><a href="#后台服务主机：网络服务-一直后台使用网络解决" class="headerlink" title="后台服务主机：网络服务 一直后台使用网络解决"></a>后台服务主机：网络服务 一直后台使用网络解决</h3><p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210503090353.png"><br>    设置网络连接为计费模式<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210503090406.png"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>建行工作期间技术总结</title>
+    <url>/2021/04/21/blogManger/docs/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h2 id="Springboot-maven设置多环境配置文件"><a href="#Springboot-maven设置多环境配置文件" class="headerlink" title="Springboot+maven设置多环境配置文件"></a>Springboot+maven设置多环境配置文件</h2><ul>
+<li>spring 默认方式，打包加载时所有环境的文件都加载到包中，通过spring.profiles.actice的值服务启动时指定对应的环境配置文件</li>
+</ul>
+<p>​    1、在默认配置文件application.yml或者application.properties 文件中配置spring.profiles.actice=dev（<strong>注意：spring.profiles.actice=dev必须配置在默认配置文件application.yml/properties中</strong>）</p>
+<p>​    2、在resources目录下新建对应环境的配置文件eg:application-dev.xml</p>
+<ul>
+<li>自定义方式 TODO</li>
+</ul>
+<p><strong>Springboot打包时加载resources目录文件问题</strong></p>
+<p>​    当pom文件中的<build>中不配置<resources>标签时属于默认情况，默认情况下src/main/resources中的所有文件都为resources文件，都会作为文件打进包类，src/main/java目录下的文件编译好的class文件会打入包类其他类型的文件不作为资源文件打入包。</p>
+<p>​    如果src/main/java中有非代码文件作为资源文件打入包需要在pom文件中的<build>中配置<resources>标签（如下代码），注意一旦配置了<resources>就是非默认情况。对应的src/main/resources也要做对应配置，不然该目录就不会加载到包中。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--java目录中sql语句的xml文件加载到包中--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/mian/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">            	<span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--重新设置resources目录文资源文件目录--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--排除不相关的文件--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">excludes</span>&gt;</span></span><br><span class="line">            	<span class="tag">&lt;<span class="name">exclude</span>&gt;</span>src/main/resources/config<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="springboot项目jar包在Linux系统中的启动与停止"><a href="#springboot项目jar包在Linux系统中的启动与停止" class="headerlink" title="springboot项目jar包在Linux系统中的启动与停止"></a>springboot项目jar包在Linux系统中的启动与停止</h2><p>1、启动 服务</p>
+<p>​    在jar目录中执行指令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nohup java -jar XXX.jar</span><br></pre></td></tr></table></figure>
+
+<p>2‘通知服务</p>
+<p>​    <strong>强制停止</strong></p>
+<p>​    ①查询pid</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ps aux|grep XXX.jarr</span><br></pre></td></tr></table></figure>
+
+<p>​    ②杀掉进程</p>
+<p>​    kill -9 pid</p>
+<h2 id="编写简单的服务启动-停止脚本"><a href="#编写简单的服务启动-停止脚本" class="headerlink" title="编写简单的服务启动/停止脚本"></a>编写简单的服务启动/停止脚本</h2><p>创建文件脚本：touch xxx.xx</p>
+<h2 id="系统多数据源配置动态切换"><a href="#系统多数据源配置动态切换" class="headerlink" title="系统多数据源配置动态切换"></a>系统多数据源配置动态切换</h2><ol>
+<li><p>配置文件中配置多个数据源</p>
+</li>
+<li><p>配置多数据源的dataSource，启动时注册不同数据源对应的dataSource的实例`Javabean</p>
+</li>
+<li><p>继承AbstractRoutingDataSource类，重写设置数据源方法</p>
+</li>
+<li><p>动态数据源内容配置，设置线程安全的（ThreadLocal&lt;&gt;）变量数据源key值，防止多线程切换数据源导致数据查询不正确。</p>
+</li>
+<li><p>使用时，直接设置（ThreadLocal&lt;&gt;）变量数据源key值即可切换数据源。</p>
+</li>
+</ol>
+<h2 id="java代码中执行shell脚本-TODO"><a href="#java代码中执行shell脚本-TODO" class="headerlink" title="java代码中执行shell脚本 TODO"></a>java代码中执行shell脚本 TODO</h2><h2 id="shell脚本运行Java代码"><a href="#shell脚本运行Java代码" class="headerlink" title="shell脚本运行Java代码"></a>shell脚本运行Java代码</h2><p>CmdClient.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.ccb.dcp.core.command.client;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.BufferedReader;</span><br><span class="line"><span class="keyword">import</span> java.io.BufferedReader;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStreamReader;</span><br><span class="line"><span class="keyword">import</span> java.io.OutputStreamWriter;</span><br><span class="line"><span class="keyword">import</span> java.io.PrintWriter;</span><br><span class="line"><span class="keyword">import</span> java.net.HttpURLConnection;</span><br><span class="line"><span class="keyword">import</span> java.net.InetAddress;</span><br><span class="line"><span class="keyword">import</span> java.net.URL;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Collections;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.Properties;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 管理命令客户端</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> tangchengshan.zh</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cmdclient</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> String charset = <span class="string">&quot;utf-8&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> String ATTR_LOCAL = <span class="string">&quot;cmd.service.url&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> String ATTR_CLUSTER = <span class="string">&quot;cmd.service.url.cluster.&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> String KW_STATUS = <span class="string">&quot;status&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> String KW_CLUSTER_STATUS = <span class="string">&quot;cluster.status&quot;</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String ctrl = <span class="string">&quot;@c@&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> String CONFIG_FILE = <span class="string">&quot;cnd.properties&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Properties configProperties = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// DateFormat df = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;);</span></span><br><span class="line">        <span class="comment">// System.out.println(&quot;Time:&quot;+df.format(new Date())):</span></span><br><span class="line">        InputStreamReader isr = <span class="keyword">new</span> InputStreamReader(System.in):</span><br><span class="line">        BufferedReader reader = <span class="keyword">new</span> BufferedReader(isr);</span><br><span class="line">        <span class="comment">//命令参数</span></span><br><span class="line">        String cmdLine = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">if</span> (args != <span class="keyword">null</span> &amp;&amp; args.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span> (String arg : args) &#123;</span><br><span class="line">                <span class="keyword">if</span> (cmdLine == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    cmdLine = arg;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    cmdLine += <span class="string">&quot; &quot;</span> + arg;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            cmdLine = cmdLine.trim();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//控制参数</span></span><br><span class="line">        String login = System.getProperty(<span class="string">&quot;user.name&quot;</span>);</span><br><span class="line">        String ctrlLine = <span class="string">&quot;login=&quot;</span> + login;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//配置加载</span></span><br><span class="line">        <span class="keyword">if</span> (configProperties == <span class="keyword">null</span>) &#123;</span><br><span class="line">            loadProperties();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (configProperties == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (cmdLine == <span class="keyword">null</span> || <span class="string">&quot;&quot;</span>.equals(cmdLine)) &#123;</span><br><span class="line">                exitByCommit(reader);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.exit(<span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//带参数命令</span></span><br><span class="line">        <span class="keyword">if</span> (cmdLine != <span class="keyword">null</span> &amp;&amp; !<span class="string">&quot;&quot;</span>.equals(cmdLine)) &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                String outData = send(cmdLine, ctrlLine);</span><br><span class="line">                logDebug(outData);</span><br><span class="line">                <span class="keyword">if</span> (outData == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    System.exit(<span class="number">1</span>);</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (outData.startsWith(KW_STATUS)</span><br><span class="line">                        || outData.startsWith(KW_CLUSTER_STATUS)) &#123;</span><br><span class="line">                    String[] ss = outData.split(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">                    String temp = ss[<span class="number">0</span>];</span><br><span class="line">                    ss = temp.split(<span class="string">&quot;=&quot;</span>);</span><br><span class="line">                    String status = <span class="keyword">null</span>;</span><br><span class="line">                    <span class="keyword">if</span> (ss.length &gt; <span class="number">1</span>)</span><br><span class="line">                        status = ss[<span class="number">1</span>];</span><br><span class="line">                    <span class="keyword">if</span> (<span class="string">&quot;0&quot;</span>.equals(status))</span><br><span class="line">                        System.exit(<span class="number">0</span>);</span><br><span class="line">                    <span class="keyword">else</span></span><br><span class="line">                        System.exit(<span class="number">1</span>);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    System.exit(<span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                logError(e);</span><br><span class="line">                System.exit(<span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;input command:&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//交互式执行</span></span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            System.out.print(<span class="string">&quot;&gt;&quot;</span>);</span><br><span class="line">            String inputCmd = <span class="keyword">null</span>;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                inputCmd = reader.readLine();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                logError(e);</span><br><span class="line">                exitByCommit(reader);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (inputCmd == <span class="keyword">null</span> || <span class="string">&quot;&quot;</span>.equals(inputCmd.trim()))</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">if</span> (inputCmd.equalsIgnoreCase(<span class="string">&quot;quit&quot;</span>)</span><br><span class="line">                    || inputCmd.equalsIgnoreCase(<span class="string">&quot;q&quot;</span>))</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                String outData = send(inputCmd, ctrlLine);</span><br><span class="line">                logDebug(outData);</span><br><span class="line">            &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                logError(e.getMessage(), <span class="keyword">null</span>);</span><br><span class="line">                System.out.print(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">send</span><span class="params">(String cmdLine, String ctrlLine)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//解析命令是否包含集群操作开关</span></span><br><span class="line">        String cluster = <span class="keyword">null</span>;</span><br><span class="line">        String type = <span class="keyword">null</span>;</span><br><span class="line">        cmdLine = cmdLine.trim();</span><br><span class="line">        String kwSet = <span class="string">&quot;set:&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (cmdLine.startsWith(kwSet)) &#123;</span><br><span class="line">            <span class="keyword">int</span> index = cmdLine.indexOf(<span class="string">&quot; &quot;</span>);</span><br><span class="line">            <span class="keyword">if</span> (index &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                String temp = cmdLine.substring(<span class="number">0</span>, index);</span><br><span class="line">                temp = temp.substring(kwSet.length());</span><br><span class="line">                String[] ss = temp.split(<span class="string">&quot;,&quot;</span>);</span><br><span class="line">                <span class="keyword">for</span> (String s : ss) &#123;</span><br><span class="line">                    String[] tt = s.split(<span class="string">&quot;=&quot;</span>);</span><br><span class="line">                    <span class="keyword">if</span> (<span class="string">&quot;cluster&quot;</span>.equals(tt[<span class="number">0</span>])) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (tt.length &gt; <span class="number">1</span>)</span><br><span class="line">                            cluster = tt[<span class="number">1</span>];</span><br><span class="line">                        <span class="keyword">else</span></span><br><span class="line">                            cluster = <span class="string">&quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">                    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="string">&quot;type&quot;</span>.equals(tt[<span class="number">0</span>])) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (tt.length &gt; <span class="number">1</span>)</span><br><span class="line">                            type = tt[<span class="number">1</span>];</span><br><span class="line">                        <span class="keyword">else</span></span><br><span class="line">                            type = <span class="string">&quot;&quot;</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> ((!<span class="string">&quot;on&quot;</span>.equals(cluster) &amp;&amp; !<span class="string">&quot;off&quot;</span>.equals(cluster))</span><br><span class="line">                    || (type == <span class="keyword">null</span> || <span class="string">&quot;&quot;</span>.equals(type))) &#123;</span><br><span class="line">                logError(<span class="string">&quot;Error,example:set:cluster=on,type=lj green -app&quot;</span>);</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            cmdLine = cmdLine.substring(index);</span><br><span class="line">            cmdLine = cmdLine.trim();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (cluster == <span class="keyword">null</span> || !<span class="string">&quot;on&quot;</span>.equals(cluster)) &#123;</span><br><span class="line">            <span class="comment">//单实例执行</span></span><br><span class="line">            String connUrl = configProperties.getProperty(ATTR_LOCAL);</span><br><span class="line">            <span class="keyword">return</span> sendcmd(connUrl, cmdLine, ctrlLine);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">//多实例执行，获取实例列表</span></span><br><span class="line">            String kwUrlPre = ATTR_CLUSTER + type;</span><br><span class="line">            List&lt;String&gt; clusterInstances = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">            <span class="keyword">for</span> (Object key : configProperties.keySet()) &#123;</span><br><span class="line">                String tempKey = (String) key;</span><br><span class="line">                <span class="keyword">if</span> (tempKey != <span class="keyword">null</span> &amp;&amp; tempKey.startsWith(kwUrlPre)) &#123;</span><br><span class="line">                    clusterInstances.add(tempKey);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (clusterInstances.size() == <span class="number">0</span>) &#123;</span><br><span class="line"></span><br><span class="line">                logError(kwUrlPre + <span class="string">&quot;*is blank&quot;</span>);</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            Collections.sort(clusterInstances);</span><br><span class="line">            <span class="comment">//外呼处理</span></span><br><span class="line">            Map&lt;String, String&gt; outDataMap = <span class="keyword">new</span> HashMap&lt;String, String&gt;();</span><br><span class="line">            <span class="keyword">for</span> (String instance : clusterInstances) &#123;</span><br><span class="line">                String connUrl = <span class="keyword">null</span>;</span><br><span class="line">                String tempData = <span class="keyword">null</span>;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    connUrl = configProperties.getProperty(instance);</span><br><span class="line">                    tempData = sendcmd(connUrl, cmdLine, ctrlLine);</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">                    tempData = <span class="string">&quot;status=1&quot;</span>;</span><br><span class="line">                    tempData += <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">                    tempData += <span class="string">&quot;desc=&quot;</span> + e.getMessage();</span><br><span class="line">                    outDataMap.put(instance, tempData);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//结果处理</span></span><br><span class="line">            String clusterStatus = <span class="string">&quot;O&quot;</span>;</span><br><span class="line">            StringBuffer cmdData = <span class="keyword">new</span> StringBuffer(<span class="string">&quot;&quot;</span>);</span><br><span class="line">            StringBuffer postData = <span class="keyword">new</span> StringBuffer(<span class="string">&quot;&quot;</span>);</span><br><span class="line">            <span class="keyword">for</span> (String instance; clusterInstances) &#123;</span><br><span class="line">                String no = instance.substring(ATTR_CLUSTER.length()):</span><br><span class="line">                String tempData = outDataMap.get(instance);</span><br><span class="line">                cmdData.append(<span class="string">&quot;--------------------&quot;</span>);</span><br><span class="line">                cmdData.append(<span class="string">&quot;send instance:&quot;</span> + no);</span><br><span class="line">                cmdData.append(<span class="string">&quot;--------------------&quot;</span>);</span><br><span class="line">                cmdData.append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">                <span class="keyword">if</span> (tempData != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    cmdData.append(tempData);</span><br><span class="line">                    <span class="keyword">if</span> (!tempData.endsWith(<span class="string">&quot;\n&quot;</span>)) &#123;</span><br><span class="line">                        cmdData.append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                String status = <span class="string">&quot;&quot;</span>;</span><br><span class="line">                <span class="keyword">if</span> (tempData != <span class="keyword">null</span> &amp;&amp; tempData.startsWith(KW_STATUS)) &#123;</span><br><span class="line">                    String[] ss = tempData.split(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">                    String temp = ss[<span class="number">0</span>];</span><br><span class="line">                    ss = temp.split(<span class="string">&quot;=&quot;</span>);</span><br><span class="line">                    <span class="keyword">if</span> (ss.length &gt; <span class="number">1</span>)</span><br><span class="line">                        status = ss[<span class="number">1</span>];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    status = <span class="string">&quot;1&quot;</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                postData.append(<span class="string">&quot;cluster.&quot;</span>);</span><br><span class="line">                postData.append(no);</span><br><span class="line">                postData.append(<span class="string">&quot;=&quot;</span>);</span><br><span class="line">                postData.append(status);</span><br><span class="line">                postData.append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">                <span class="keyword">if</span> (!<span class="string">&quot;0&quot;</span>.equals(status))</span><br><span class="line">                    clusterStatus = <span class="string">&quot;1&quot;</span>;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">            StringBuffer outData = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">            outData.append(KW_CLUSTER_STATUS + <span class="string">&quot;-&quot;</span> + clusterStatus + <span class="string">&quot;\n&quot;</span>);</span><br><span class="line">            outData.append(cmdData.toString());</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (!outData.toString().endsWith(<span class="string">&quot;\n&quot;</span>))</span><br><span class="line">                outData.append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">            outData.append(<span class="string">&quot;---------luster.status.list------&quot;</span>);</span><br><span class="line">            outData.append(postData.toString());</span><br><span class="line">            <span class="keyword">return</span> outData.toString();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">sendcmd</span><span class="params">(String connurl, String cmdLine, String ctrlLine)</span> </span>&#123;</span><br><span class="line">        URL url = <span class="keyword">null</span>;</span><br><span class="line">        HttpURLConnection conn = <span class="keyword">null</span>;</span><br><span class="line">        PrintWriter writer = <span class="keyword">null</span>;</span><br><span class="line">        BufferedReader reader = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            String hostAddress = InetAddress.getLocalHost().getHostAddress();</span><br><span class="line">            <span class="keyword">if</span> (hostAddress != <span class="keyword">null</span> &amp;&amp; connurl.indexOf(<span class="string">&quot;localhost&quot;</span>) &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">                connurl = connurl.replaceFirst(<span class="string">&quot;localhost&quot;</span>, hostAddress);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (hostAddress != <span class="keyword">null</span> &amp;&amp; connurl.indexOf(<span class="string">&quot;127.0.0.1&quot;</span>) &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">                connurl = connurl.replaceFirst(<span class="string">&quot;127.00.&quot;</span>, hostAddress);</span><br><span class="line">            &#125;</span><br><span class="line">            url = <span class="keyword">new</span> URL(connurl);</span><br><span class="line">            conn = (HttpURLConnection) url.openConnection();</span><br><span class="line">            conn.setDoInput(<span class="keyword">true</span>);</span><br><span class="line">            conn.setDoOutput(<span class="keyword">true</span>);</span><br><span class="line">            String cmdData = cmdLine;</span><br><span class="line">            <span class="keyword">if</span> (ctrlLine != <span class="keyword">null</span> &amp;&amp; !<span class="string">&quot;&quot;</span>.equals(ctrlLine)) &#123;</span><br><span class="line">                cmdData += ctrl + ctrlLine;</span><br><span class="line">            &#125;</span><br><span class="line">            writer = <span class="keyword">new</span> PrintWriter(<span class="keyword">new</span> OutputStreamWriter(</span><br><span class="line">                    conn.getOutputStream(), charset));</span><br><span class="line">            writer.print(cmdData);</span><br><span class="line">            writer.flush();</span><br><span class="line"></span><br><span class="line">            StringBuffer outData = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">            reader = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(</span><br><span class="line">                    conn.getInputStream(), charset));</span><br><span class="line">            String temp = <span class="keyword">null</span>;</span><br><span class="line">            String line = <span class="string">&quot;&quot;</span>;</span><br><span class="line">            <span class="keyword">while</span> ((temp = reader.readLine()) != <span class="keyword">null</span>) &#123;</span><br><span class="line">                outData.append(line).append(temp);</span><br><span class="line">                line = <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> outData.toString();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">&quot;Failture to send,url=[&quot;</span> + connurl</span><br><span class="line">                    + <span class="string">&quot;],cmd=[&quot;</span> + cmdLine + <span class="string">&quot;],error_message=&quot;</span></span><br><span class="line">                    + e.getClass().getName() + <span class="string">&quot;:&quot;</span> + e.getMessage());</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (writer != <span class="keyword">null</span>)</span><br><span class="line">                    writer.close();</span><br><span class="line">                <span class="keyword">if</span> (reader != <span class="keyword">null</span>)</span><br><span class="line">                    reader.close();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">exitByCommit</span><span class="params">(BufferedReader reader)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            System.out.print(<span class="string">&quot;Quit?(Y/N)&gt;&quot;</span>);</span><br><span class="line">            String inputCmd = reader.readLine();</span><br><span class="line">            <span class="keyword">if</span> (inputCmd</span><br><span class="line">                    != <span class="keyword">null</span> &amp;&amp; inputCmd.trim().equalsIgnoreCase(<span class="string">&quot;y&quot;</span>)) &#123;</span><br><span class="line">                System.exit(<span class="number">1</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.print(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">                exitByCommit(reader);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            logError(e);</span><br><span class="line">            System.exit(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">logDebug</span><span class="params">(String message)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (message != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (message.endsWith(<span class="string">&quot;\n&quot;</span>)) &#123;</span><br><span class="line">                System.out.print(message);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.println(message);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">logError</span><span class="params">(String message)</span> </span>&#123;</span><br><span class="line">        logError(message, <span class="keyword">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> logError</span><br><span class="line">            (Exception</span><br><span class="line">                     e) &#123;</span><br><span class="line">        logError(<span class="keyword">null</span>, e);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> logError</span><br><span class="line">            (String</span><br><span class="line">                     message, Exception</span><br><span class="line">                     e) &#123;</span><br><span class="line">        <span class="keyword">if</span> (message != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (message.endsWith(<span class="string">&quot;\n&quot;</span>)) &#123;</span><br><span class="line">                System.err.print(message);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.err.println(message);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">loadProperties</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// logDebug(&quot;initialize, load &quot;+ CONFIG_FILE);</span></span><br><span class="line">        ClassLoader loader = Thread.currentThread().getContextClassLoader();</span><br><span class="line">        InputStream is = loader.getResourceAsStream(CONFIG_FILE);</span><br><span class="line">        Properties tempProperties = <span class="keyword">new</span> Properties();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            tempProperties.load(is);</span><br><span class="line">            configProperties = tempProperties;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            logError(<span class="string">&quot;initialize,load failture&quot;</span>, e);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        String localUrl = configProperties.getProperty(ATTR_LOCAL);</span><br><span class="line">        <span class="keyword">if</span> (localUrl == <span class="keyword">null</span> || <span class="string">&quot;&quot;</span>.equals(localUrl))</span><br><span class="line">            logError(ATTR_LOCAL + <span class="string">&quot; is blank&quot;</span>, <span class="keyword">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>HttpCmdClient.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.ccb.dcp.core.command.service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.ByteArrayOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.OutputStream;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Collections;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.apache.commons.lang3.Stringutils;</span><br><span class="line"><span class="keyword">import</span> org.apache.log4j.MDC;</span><br><span class="line"><span class="keyword">import</span> com.ccb.dcp.core.command.Cmd;</span><br><span class="line"><span class="keyword">import</span> com.ccb.dcp.core.command.OptionResult;</span><br><span class="line"><span class="keyword">import</span> com.ccb.dcp.core.command.config.CmdManager;</span><br><span class="line"><span class="keyword">import</span> com.ccb.dcp.core.command.status.OptionStatus;</span><br><span class="line"><span class="keyword">import</span> com.ccb.openframework.exception.CommonRuntimeException;</span><br><span class="line"><span class="keyword">import</span> com.ccb.openframework.log.i18nlog.Log;</span><br><span class="line"><span class="keyword">import</span> com.ccb.openframework.log.i18nlog.LogFactory;</span><br><span class="line"><span class="keyword">import</span> com.ccb.openframework.swaparea.SwapAreautils;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 管理命令服务端</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HttpCmdService</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = <span class="number">1L</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Log log = LogFactory.getLog(HttpCmdService.class);</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String log000 = <span class="string">&quot;&#123;0&#125;&quot;</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String ctrl = <span class="string">&quot;@c@&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(HttpServletRequest request,</span></span></span><br><span class="line"><span class="function"><span class="params">                           HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        Inputstream is = request.getInputStream();</span><br><span class="line">        OutputStream out = response.getOutputStream();</span><br><span class="line"><span class="comment">//读取命令</span></span><br><span class="line">        <span class="keyword">byte</span>[] inputBytes = readcontent(is);</span><br><span class="line">        String intput = <span class="keyword">new</span> String(inputBytes);</span><br><span class="line">        String inputCmd = <span class="keyword">null</span>;</span><br><span class="line">        String inputCtrl = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">if</span> (intput.indexof(ctrl) &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">int</span> lastCtrlIndex = intput.lastIndex0f(ctrl);</span><br><span class="line">            inputCmd = intput.substring(<span class="number">0</span>, lastCtrlIndex);</span><br><span class="line">            inputCtrl = intput.substring(lastCtrlIndex + ctrl.length());</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            String desc = <span class="string">&quot;控制参数丰法&quot;</span>;</span><br><span class="line">            log.info(<span class="string">&quot;log000&quot;</span>, desc + <span class="string">&quot;,cmd=&quot;</span> + intput);</span><br><span class="line">            String outData = printError(desc);</span><br><span class="line">            out.write(outData.getBytes());</span><br><span class="line">            out.flush();</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (Stringutils.isBlank(inputCmd)) &#123;</span><br><span class="line">            String desc = <span class="string">&quot;命令参数不能为空&quot;</span>;</span><br><span class="line">            log.info(<span class="string">&quot;log000&quot;</span>, desc + <span class="string">&quot;,cmd=&quot;</span> + intput);</span><br><span class="line">            String outData = printError(desc);</span><br><span class="line">            out.write(outData.getBytes());</span><br><span class="line">            out.flush();</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        inputCmd = inputCmd.trim();</span><br><span class="line"><span class="comment">//命令参数</span></span><br><span class="line">        String[] tempCmdArgs = inputCmd.split(<span class="string">&quot;&quot;</span>);</span><br><span class="line">        <span class="keyword">int</span> tempCmdArgLen = tempCmdArgs.length;</span><br><span class="line">        String cmdName = tempCmdArgs[<span class="number">0</span>];</span><br><span class="line">        String[] cmdArgs = <span class="keyword">new</span> String[tempCmdArgLen - <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; tempCmdArgLen;</span><br><span class="line">             i++) &#123;</span><br><span class="line">            cmdArgs[i - <span class="number">1</span>] = tempCmdArgs[i];</span><br><span class="line">        &#125;</span><br><span class="line"><span class="comment">//控制参数</span></span><br><span class="line">        String[] ctrlArgs = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">if</span> (StringUtils.isNotBlank(inputCtrl)) &#123;</span><br><span class="line">            ctrlArgs = inputCtrl.split(<span class="string">&quot;&quot;</span>);</span><br><span class="line">            log.debug(<span class="string">&quot;log000&quot;</span>, <span class="string">&quot;ctrl=&quot;</span> + inputCtrl);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (<span class="string">&quot;help&quot;</span>.equalsIgnoreCase(cmdName)) &#123;</span><br><span class="line">            String outData = printCmdList(<span class="keyword">false</span>);</span><br><span class="line">            out.write(outData.getBytes());</span><br><span class="line">            out.flush();</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (<span class="string">&quot;helpal1&quot;</span>.equalsIgnoreCase(cmdName)) &#123;</span><br><span class="line">            String outData = printCmdList(<span class="keyword">true</span>);</span><br><span class="line">            out.write(outData.getBytes());</span><br><span class="line">            out.flush();</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Cmd cmd = CmdManager.getCmd(cmdName);</span><br><span class="line">        <span class="keyword">if</span> (cmd == <span class="keyword">null</span>) &#123;</span><br><span class="line">            String desc = <span class="string">&quot;命令不存在&quot;</span>；</span><br><span class="line">            log.info(<span class="string">&quot;log000&quot;</span>, desc + <span class="string">&quot;,cmd=&quot;</span> + inputCmd);</span><br><span class="line">            String outData = printError(desc);</span><br><span class="line">            out.write(outData.getBytes());</span><br><span class="line">            out.flush();</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            MDC.put(<span class="string">&quot;[&#x27;_service_id]&quot;</span>, <span class="string">&quot;cmd:&quot;</span> + cmdName);</span><br><span class="line">            SwapAreaUtils.buildNewSwapArea();</span><br><span class="line">            <span class="keyword">if</span> (log.isInfoEnabled())</span><br><span class="line">                log.info(<span class="string">&quot;log000&quot;</span>, <span class="string">&quot;命令开始,cmd=&quot;</span> + inputCmd);</span><br><span class="line">            <span class="keyword">byte</span>[] outBytes = cmd.execute(cmdArgs, ctrlArgs);</span><br><span class="line">            out.write(outBytes);</span><br><span class="line">            out.flush();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            log.error(<span class="string">&quot;log000&quot;</span>, e, <span class="string">&quot;命令异常,cmd=&quot;</span> + inputCmd);</span><br><span class="line">            OptionResult or = <span class="keyword">new</span> OptionResult();</span><br><span class="line">            or.setStatus(OptionStatus.UNKNOWN);</span><br><span class="line">            <span class="keyword">if</span> (e <span class="keyword">instanceof</span> CommonRuntimeException) &#123;</span><br><span class="line">                or.setCode(((CommonRuntimeException) e).getCode());</span><br><span class="line">                or.setDesc(((CommonRuntimeException) e).getLocalizedMessage());</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                or.setDesc(e.getMessage());</span><br><span class="line">            &#125;</span><br><span class="line">            out.write(or.toResultstring().getBytes());</span><br><span class="line">            out.flush():</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="number">1</span> og.info(<span class="string">&quot;log000&quot;</span>, <span class="string">&quot;命令结束，cmd=&quot;</span> + inputCmd);</span><br><span class="line">            SwapAreaUtils.releaseCurrentSwapArea();</span><br><span class="line">            MDC.clear(();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152601.png"><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430153343.png"><br><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430153409.png"></p>
+<p>Cmd.java<br><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152629.png"><br><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430153425.png"><br><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430153437.png"><br><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152647.png"><br><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430153459.png"><br><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430153515.png"></p>
+<p>   1、 通过 java -cp XXX.jar  com.xxx.xxx.CmdClient $* 指令运行CmdClient的main方法<br>   2、 在CmdClient中的main方法中 通过调用http地址调用其他接口<br>   3、对应项目启动时配置一个http地址，在XXXApplication.java启动类中配置ServletRegistrationBean的bean,设置对应的httpServlet<br>    <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152712.png"><br>   4、http地址请求到在httpCmdService中的唯一继承servlet的service方法中<br>   5、调用CMDManage.getCmd（zzz）方法进行命令获取，<br>   <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152724.png"><br>   <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152750.png"><br>   <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152759.png"><br>   <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152818.png"><br>   <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152829.png"></p>
+<h2 id="shell脚本总结"><a href="#shell脚本总结" class="headerlink" title="shell脚本总结"></a>shell脚本总结</h2><p>  1、shell中$符号的常见用法</p>
+<pre><code> $0    脚本本身的名字
+ $1    传递给该脚本的第一个参数（1-n）的数字以此类推
+ $#    统计传给脚本参数的个数
+ $@    传递给脚本的所有参数列表
+ $*    以字符串的形式展示所有传递给脚本的参数
+ $?    显示最后命令的退出状态 0：表示成功 其他表示失败
+ $$    该脚本运行时的进程ID号
+</code></pre>
+<p>  3、shell脚本关键字</p>
+<pre><code>    export      
+    exit
+</code></pre>
+<p>  2、常用可执行指令</p>
+<pre><code>    basename    获取目录或者文件的名称 
+    dirname     获取文件或目录所在的目录的绝对路径。如果是当前目录则为.
+    java -cp    cp意思为classpath，执行指定classpath的代码，可传参数
+</code></pre>
+<p>  4、shell脚本实例阅读注释</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152842.png"><br>​ </p>
+<h2 id="Oracle工具sqlldr工具使用步骤"><a href="#Oracle工具sqlldr工具使用步骤" class="headerlink" title="Oracle工具sqlldr工具使用步骤"></a>Oracle工具sqlldr工具使用步骤</h2><p>1、查看文件数据格式，分析字段如何截取。可以是固定的分割符号 或者是设置指定定长字段<br>2、编写ctl文件，根据ctl语法进行编写<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152903.png"><br>3、在服务器中执行sqlldr指令，标注好数据的链接信息及执行的参数信息<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152918.png"><br>   <strong>使用前提</strong>：<br>    1、需要在安装配置好oracle客户端的服务器上执行sqlldr指令<br>   <strong>注意事项</strong>：<br>    1、ctl文件中的编码设置utf-8格式应为utf8,否则语法不合法<br>    2、sqlldr指令中uerid中最好指定好端口号和服务名称<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152927.png"><br>    3、时间日期转换是对应的dataFormat的格式为“yyyy-mm-dd hh24:mi:ss”,必须为hh24和mi 否则转换失败<br>    4、中文字符一个占用3个字符长度，做好数据与字段长度确认</p>
+<h2 id="idea实现远程调试springboot项目"><a href="#idea实现远程调试springboot项目" class="headerlink" title="idea实现远程调试springboot项目"></a>idea实现远程调试springboot项目</h2><p><strong>注意事项：</strong><br>1、部署远程jar包的源代码要与本地代码保持一致，否则调试定位代码位置不准确<br>2、设置远程调试的监听端口要与服务启动端口不要重复，确保监听端口不被占用<br><strong>设置步骤：</strong><br>1、jar包部署到测试服务器<br>2、idea工具中配置远程调试服务器信息<br>    1)<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152935.png">点解edit configuration<br>    2)<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152944.png">选择remote 添加远程调试配置<br>    3）<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430152954.png">设置远程服务的IP及监听端口号<br>    4）<br>3、以远程调试的方式启动项目<br>    <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430153004.png">添加远程调试的启动参数启动项目<br>    如果adress的值只是端口号出现下图错误<img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430153013.png">这在adress的值设置时指定IP地址和端口号（参考文档：<a href="https://blog.csdn.net/u012373851/article/details/78897556%EF%BC%89">https://blog.csdn.net/u012373851/article/details/78897556）</a><br>4、启动idea远程调试，设置断点即可<br>    <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210430153612.png">idea中启动选择设置的remote，点击小爬虫运行即可</p>
+<h2 id="oracle与MySQL语法差别统计"><a href="#oracle与MySQL语法差别统计" class="headerlink" title="oracle与MySQL语法差别统计"></a>oracle与MySQL语法差别统计</h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210304134022650.png" alt="image-20210304134022650"></p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210304134157742.png" alt="image-20210304134157742"></p>
+]]></content>
+      <categories>
+        <category>工作总结</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>实现方法</tag>
+        <tag>spring</tag>
+        <tag>shell</tag>
+        <tag>远程调试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>github+hexo 搭建个人博客平台教程</title>
-    <url>/2021/04/21/github+hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0%E6%95%99%E7%A8%8B/</url>
+    <url>/2021/04/21/blogManger/docs/github+hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>​    当产生了一个问题，如何描述清楚这个问题，又如何解决这个问题。问题解决后总结并做好记录。时间长了记得不清楚是可以作为资料参考，帮助更快的解决问题。为了方便查询想到建立一个自己的博客平台。GitHub+hexo的成本更低入手更快，所以选择这种方式搭建自己的博格平台工自己记录工作生活中的笔记。</p>
 <p>参考链接：<a href="https://zhuanlan.zhihu.com/p/69207995">使用Github Pages和Hexo搭建自己的独立博客【超级详细的小白教程】</a></p>
 <h1 id="1、平台搭建前本地运行环境准备"><a href="#1、平台搭建前本地运行环境准备" class="headerlink" title="1、平台搭建前本地运行环境准备"></a>1、平台搭建前本地运行环境准备</h1><h2 id="1-1-安装node-js"><a href="#1-1-安装node-js" class="headerlink" title="1.1 安装node.js"></a>1.1 安装node.js</h2><p><a href="https://link.zhihu.com/?target=https://nodejs.org/en/download/">点击此处</a>访问官网，按需下载相应版本，默认安装可以了</p>
-<p><img src="https://pic1.zhimg.com/80/v2-a862cd19f00d37830a1d74e351cb9370_720w.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210501222709.jpg" alt="img"></p>
 <p>注：本人在安装过程中出现了Warning 1909,无法创建快捷方式，这种情况很少出现，如果在安装过程中也有这种情况请参考百度文库（win10系统实测可行）：<a href="https://link.zhihu.com/?target=https://wenku.baidu.com/view/4ad59110964bcf84b9d57ba5.html">《Win7安装程序警告1909无法创建快捷方式》</a></p>
-<p><img src="https://pic1.zhimg.com/80/v2-a2fe843c066b1932294085fdfbae7004_720w.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502090823.jpg" alt="img"></p>
 <h2 id="1-2-安装git客户端"><a href="#1-2-安装git客户端" class="headerlink" title="1.2 安装git客户端"></a>1.2 安装git客户端</h2><p><a href="https://link.zhihu.com/?target=https://git-scm.com/download/win">点击此处</a>访问官网，按需下载相应版本，默认安装即可</p>
 <p>参考资料：</p>
 <p><a href="https://link.zhihu.com/?target=https://www.cnblogs.com/jytx/p/5602927.html">《如何在windows下安装GIT》</a> （By 俊雨廷休）</p>
@@ -34,14 +361,14 @@
 <h2 id="1-3-安装Typora-markdown-文件编辑工具"><a href="#1-3-安装Typora-markdown-文件编辑工具" class="headerlink" title="1.3 安装Typora(markdown 文件编辑工具)"></a>1.3 安装Typora(markdown 文件编辑工具)</h2><h1 id="2、本地环境安装Hexo"><a href="#2、本地环境安装Hexo" class="headerlink" title="2、本地环境安装Hexo"></a>2、本地环境安装Hexo</h1><h2 id="2-1-安装hexo客户端"><a href="#2-1-安装hexo客户端" class="headerlink" title="2.1 安装hexo客户端"></a>2.1 安装hexo客户端</h2><p>选择一个磁盘，新建一个文件夹，自己重命名文件夹（如：我的文件夹为：Ｅ\myself_hexo），博客相关文件将储存在此文件夹下，在该文件夹下右键鼠标，点击 Git Bash Here，输入以下 npm 命令即可安装，第一个命令表示安装 hexo，第二个命令表示安装 hexo 部署到 git page 的 deployer，如图所示即为安装成功</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://pic1.zhimg.com/80/v2-747859cef004e42b6e03cb7f7bbba53c_720w.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502090859.jpg" alt="img"></p>
 <hr>
 <h2 id="2-2-Hexo-初始化配置"><a href="#2-2-Hexo-初始化配置" class="headerlink" title="2.2 Hexo 初始化配置"></a>2.2 Hexo 初始化配置</h2><p>在刚才新建的文件夹里面再次新建一个 Hexo 文件夹（如：我的文件夹为：E\TRHX_Blog\Hexo）,进入该 Hexo 文件夹右键鼠标，点击 Git Bash Here，输入以下命令，如图所示则安装成功</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://pic3.zhimg.com/80/v2-02046eb4eecb5314b1883a9cadf71f4e_720w.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502090913.jpg" alt="img"></p>
 <p>Hexo 安装完成后，将会在指定文件夹中新建所需要的文件，Hexo 文件夹下的目录如下：</p>
-<p>![image-20210420145531595](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420145531595.png)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502092041.png" alt="image-20210420145531595"></p>
 <hr>
 <h2 id="2-3-本地查看效果"><a href="#2-3-本地查看效果" class="headerlink" title="2.3 本地查看效果"></a>2.3 本地查看效果</h2><p>执行以下命令，执行完即可登录 <a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a> 查看效果</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -49,24 +376,24 @@
 <p>显示以下信息说明操作成功：</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
 
-<p>登录 <a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a> 查看效果：</p>
-<p><img src="https://pic1.zhimg.com/80/v2-8b63b2eac2db49fc1f001f475aa316d8_720w.jpg" alt="img"></p>
+<p>登录 <a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a> 查看默认主题效果：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091312.jpg" alt="img"></p>
 <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="3、在GitHub上创建Github-Pages"><a href="#3、在GitHub上创建Github-Pages" class="headerlink" title="3、在GitHub上创建Github Pages"></a>3、在GitHub上创建Github Pages</h1><p>到目前为止，我们的本地博客就成功搭建了，但是现在我们只能通过本地连接查看博客，我们要做的是让其他人也能够访问我们的博客，这就需要我们将博客部署到Github Pages上.</p>
 <ol>
 <li><p>创建项目代码库：点击 New repository 开始创建，步骤及注意事项见图：</p>
-<p>![image-20210420160918910](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420160918910.png)</p>
+<p>![image-20210420160918910](/Users/xmly/myDoc/blogManger/docs\github+hexo 搭建个人博客平台教程.assets\image-20210420160918910.png)</p>
 <p>2.设置该新建repository的pages,可以指定对应的自定义域名</p>
 <hr>
 </li>
 </ol>
 <h1 id="4、将本地中的Hexo提交到Github-Pages"><a href="#4、将本地中的Hexo提交到Github-Pages" class="headerlink" title="4、将本地中的Hexo提交到Github Pages"></a>4、将本地中的Hexo提交到Github Pages</h1><p>1设置github的Personal access tokens，生成的token为提交时的github密码</p>
-<p>![image-20210420163844692](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420163844692.png)</p>
-<p>![image-20210420163917345](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420163917345.png)</p>
-<p>![image-20210420163957927](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420163957927.png)</p>
-<p>![image-20210420164049201](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420164049201.png)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091603.png" alt="image-20210420163844692"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091641.png" alt="image-20210420163917345"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091704.png" alt="image-20210420163957927"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091733.png" alt="image-20210420164049201"></p>
 <p>2修改hexo的_confiing.xml文案，指定对应的git地址（使用http方式提交git）</p>
-<p>![image-20210420163336880](E:\01 面试复习资料汇总\02笔记\github+hexo 搭建个人博客平台教程.assets\image-20210420163336880.png)</p>
-<p><img src="https://pic2.zhimg.com/80/v2-a639d48aa332f29e47f6a83c97c185d1_720w.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091754.png" alt="image-20210420163336880"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091808.jpg" alt="img"></p>
 <p>repository中的值可以为http地址，如</p>
 <p>：3、在hexo目录下执行提交命令</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
@@ -86,11 +413,11 @@
 <p>你的博客地址：https://你的用户名.<a href="https://link.zhihu.com/?target=http://github.io">http://github.io</a>，比如我的是：<a href="https://link.zhihu.com/?target=https://trhx.github.io">https://trhx.github.io</a> ，现在每个人都可以通过此链接访问你的博客了</p>
 <h1 id="5、为博客更改Hexo主题"><a href="#5、为博客更改Hexo主题" class="headerlink" title="5、为博客更改Hexo主题"></a>5、为博客更改Hexo主题</h1><p>博客也搭建好了，文章也会写了，但是！！！默认的主题并不喜欢怎么办？现在，我们就来为自己的博客更换自己喜欢的主题</p>
 <p><a href="https://link.zhihu.com/?target=https://hexo.io/themes/">点击此处</a>进入 Hexo 官网的主题专栏，我们可以看见有许多的主题供我们选择</p>
-<p><img src="https://pic2.zhimg.com/80/v2-4f715f2848a2009f755e4e117d1def99_720w.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091826.jpg" alt="img"></p>
 <p>我们要做的就是把主题克隆过来，在此我们以主题 Aero-Dual 为例，点进去我们就可以看见该主题作者的博客，鼠标滑到底，我们可以看见 Theme By Levblanc 的字样（其他主题类似），点击作者 Levblanc ，页面就会跳转到该主题所有的相关文件在 Github 上的地址，复制该地址</p>
-<p><img src="https://pic2.zhimg.com/80/v2-c622e4fbdcd13547f8f7b661523b2889_720w.jpg" alt="img"></p>
-<p><img src="https://pic1.zhimg.com/80/v2-ec69bdba65eb661d34ed3299e672d6ec_720w.jpg" alt="img"></p>
-<p><img src="https://pic2.zhimg.com/80/v2-f095c3d8c767d5f60daf3edff407a481_720w.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091841.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091849.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091900.jpg" alt="img"></p>
 <p>再打开 Hexo 文件夹下的 themes 目录（如：E:\TRHX_Blog\Hexo\themes），右键 Git Bash Here，输入以下命令：</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ git clone 此处填写你刚才复制的主题地址</span><br></pre></td></tr></table></figure>
 
@@ -98,7 +425,7 @@
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ git clone https://github.com/levblanc/hexo-theme-aero-dual</span><br></pre></td></tr></table></figure>
 
 <p>等待下载完成后即可在 themes 目录下生成 hexo-theme-aero-dual 文件夹，然后打开 Hexo 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：theme：hexo-theme-aero-dual （其他主题修改成相应名称即可），再次注意冒号后面有一个空格！</p>
-<p><img src="https://pic2.zhimg.com/80/v2-3500f734e8ec85ef4c2dad77d1b93225_720w.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210502091921.jpg" alt="img"></p>
 <p>返回 Hexo 目录，右键 Git Bash Here ，输入以下命令开始部署主题：</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$ hexo g   </span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 
@@ -111,7 +438,8 @@
 <p><a href="https://www.zhihu.com/question/24422335">《有哪些好看的 Hexo 主题？》</a> （知乎）</p>
 <p><a href="https://link.zhihu.com/?target=https://hexo.io/zh-cn/docs/configuration.html">《Hexo | 配置》</a> （Hexo官方文档）</p>
 <p><a href="https://link.zhihu.com/?target=https://segmentfault.com/a/1190000002632530">《hexo常用命令笔记》</a> （By 小弟调调）</p>
-<h1 id="6、如何在博客上编辑发表文章"><a href="#6、如何在博客上编辑发表文章" class="headerlink" title="6、如何在博客上编辑发表文章"></a>6、如何在博客上编辑发表文章</h1><h1 id="7、如何修改配置nextX主题"><a href="#7、如何修改配置nextX主题" class="headerlink" title="7、如何修改配置nextX主题"></a>7、如何修改配置nextX主题</h1>]]></content>
+<h1 id="6、如何在博客上编辑发表文章"><a href="#6、如何在博客上编辑发表文章" class="headerlink" title="6、如何在博客上编辑发表文章"></a>6、如何在博客上编辑发表文章</h1><h1 id="7、如何修改配置nextX主题"><a href="#7、如何修改配置nextX主题" class="headerlink" title="7、如何修改配置nextX主题"></a>7、如何修改配置nextX主题</h1><h2 id="7-1-常见标签及分类"><a href="#7-1-常见标签及分类" class="headerlink" title="7.1 常见标签及分类"></a>7.1 常见标签及分类</h2><p>添加分类及标签 <a href="https://www.jianshu.com/p/e17711e44e00?tdsourcetag=s_pctim_aiomsg">https://www.jianshu.com/p/e17711e44e00?tdsourcetag=s_pctim_aiomsg</a></p>
+<h2 id="7-2-Hexo-NexT主题配置搜索功能教程"><a href="#7-2-Hexo-NexT主题配置搜索功能教程" class="headerlink" title="7.2 Hexo NexT主题配置搜索功能教程"></a>7.2 Hexo NexT主题配置搜索功能教程</h2>]]></content>
       <categories>
         <category>日常工具</category>
       </categories>
@@ -121,27 +449,5 @@
         <tag>GitHub</tag>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>test-title</title>
-    <url>/2021/04/21/test-title/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test-layout</title>
-    <url>/2021/04/21/test-layout/</url>
-    <content><![CDATA[<p><img src="E:\myself-blog\Hexo\source_posts\test-layout.assets\image-20210421093841343.png" alt="image-20210421093841343"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2021/04/21/test/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
