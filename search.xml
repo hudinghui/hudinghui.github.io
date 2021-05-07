@@ -450,4 +450,53 @@ dcp-big-data-process:大数据平台对接框架
         <tag>hexo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>idea工具常用功能汇总</title>
+    <url>/2021/05/07/blogManger/docs/idea%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<p>idea工具常用功能汇总，idea安装必备合集。效率开发利器，磨刀不误砍材工。</p>
+<h2 id="使用reset插件充值免费使用信息，可以重复免费达到破-解idea目的"><a href="#使用reset插件充值免费使用信息，可以重复免费达到破-解idea目的" class="headerlink" title="使用reset插件充值免费使用信息，可以重复免费达到破 解idea目的"></a>使用reset插件充值免费使用信息，可以重复免费达到破 解idea目的</h2><h2 id="翻译插件Traslation"><a href="#翻译插件Traslation" class="headerlink" title="翻译插件Traslation"></a>翻译插件Traslation</h2><p>​    在plugins中安装Traslation插件。不同系统的快捷键使用如下</p>
+<p>​    <img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210507192920.png" alt="image-20210507192920745"></p>
+<h2 id="database数据库操作工具"><a href="#database数据库操作工具" class="headerlink" title="database数据库操作工具"></a>database数据库操作工具</h2><p> 在plugins中安装database插件，idea有的版本自带不需要安装。database可以直接在idea窗口中连接数据库，对数据库进行操作。</p>
+<p>1、右键table，选择Diagrams,可以查询看表的概要信息，有助与根据数据熟悉业务。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210507194832.png" alt="image-20210507194832873"></p>
+<p>​    选中对应展示后右键可以选择要显示的信息</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210507195830.png" alt="image-20210507195830620"></p>
+<h2 id="easyCode根据表结构生成相关基础代码"><a href="#easyCode根据表结构生成相关基础代码" class="headerlink" title="easyCode根据表结构生成相关基础代码"></a>easyCode根据表结构生成相关基础代码</h2><p>​    在plugins中安装easyCode插件，可以根据database中链接的数据库表结构快速创建基础代码，类似mybatis gentoner功能。</p>
+<p>​    1、选中对应表结构右键，选择如图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210507193502.png" alt="image-20210507193502723"></p>
+<p>2、根据代码情况设置对应的信息，设置好后直接生成基础代码，一般group选择default即可。如图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210507194506.png" alt="image-20210507194344070"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210507194250.png" alt="image-20210507194250348"></p>
+<h2 id="使用arthas定位发布环境的bug"><a href="#使用arthas定位发布环境的bug" class="headerlink" title="使用arthas定位发布环境的bug"></a>使用arthas定位发布环境的bug</h2><p>参考链接：</p>
+<p>1、首先我们要安装两个插件“arthas idea” 和 “ArthasHotSwap”，IDEA可以直接安装使用。“arthas idea”是为了高效率生成Arthas命令，“ArthasHotSwap”可以实现简单快捷的热部署。</p>
+<h3 id="插件“arthas-idea”-和arthas定位问题"><a href="#插件“arthas-idea”-和arthas定位问题" class="headerlink" title="插件“arthas idea” 和arthas定位问题"></a>插件“arthas idea” 和arthas定位问题</h3><p><strong>第一步：定位相关方法</strong></p>
+<p>首先定位到相关的代码，代码如下图所示，方法执行结果应该要返回一个map，也就是上面问题的extraData，返回为空，肯定是这里有问题，但不知道那行代码的问题。借助Arthas可以想到的是，我能观测这个方法的出参和入参，说不定能发现问题。于是使用Arthas的watch命令观测方法执行情况。类型</p>
+<p><strong>第二步：生成方法观测命令</strong></p>
+<p>安装了“arthas idea”插件之后，在方法名上面单击右键，选择watch，如下图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210507201434.png" alt="image-20210507201434129"></p>
+<p><strong>第三步：登录应用服务器</strong></p>
+<p>一般应用都部署在云上或其他远程服务器，我们需要登录应用部署的服务器。</p>
+<p><strong>第四步：安装Arthas</strong></p>
+<p>Arthas 支持在 Linux/Unix/Mac 等平台上一键安装，请复制以下内容，并粘贴到命令行中，敲 回车 执行即可。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -L https:&#x2F;&#x2F;arthas.aliyun.com&#x2F;install.sh | sh</span><br></pre></td></tr></table></figure>
+
+<p><strong>第五步：运行Arthas</strong></p>
+<p>上述命令会下载启动脚本文件 as.sh 到当前目录，直接在shell下面执行./as.sh，就会进入交互界面。</p>
+<p><strong>第六步：执行观测方法命令</strong></p>
+<p>第二步执行完后，观测方法的命令已经在粘贴板了，粘贴执行就行，示例命令如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">watch com.**.**.endpoint.BargainPlayApplyCycleEndPoint fetchPlayDetailRenderData &#39;&#123;params,returnObj,throwExp&#125;&#39; -n 5 -x 3 &#39;params[0].getPlayToolDO().getId()&#x3D;&#x3D;588&#39;</span><br></pre></td></tr></table></figure>
+
+<p>命令解释：’{params,returnObj,throwExp}’ 表示观测对象，这里选择了入参、出参和异常，-n 5 表示观测到5次后停止，-x 3 表示打印观测对象的时候只打印3层嵌套结构，’params[0].getPlayToolDO().getId()==588’ 为条件表达式，满足该条件的才会被观测到。</p>
+<p><strong>第七步：查看观测结果</strong></p>
+<p>前端重新触发执行后，得到观测结果如下所示，从入参可以看到playActivityApplyRequest中的targetId为null，实际上应该要取playActivityRecordDO中的targetId。从返回结果可以看到确实是因为商品ID不存在原因。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hudinghui/blogImages/mdImage/20210507201536.png" alt="image-20210507201536454"></p>
+<h3 id="ArthasHotSwap实现简单快捷的热部署-TODO"><a href="#ArthasHotSwap实现简单快捷的热部署-TODO" class="headerlink" title="ArthasHotSwap实现简单快捷的热部署 TODO"></a>ArthasHotSwap实现简单快捷的热部署 TODO</h3><h2 id="代码规范扫描插件（alibaba规约）"><a href="#代码规范扫描插件（alibaba规约）" class="headerlink" title="代码规范扫描插件（alibaba规约）"></a>代码规范扫描插件（alibaba规约）</h2>]]></content>
+      <categories>
+        <category>日常工具(磨刀不误砍材工)</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>idea</tag>
+      </tags>
+  </entry>
 </search>
